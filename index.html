@@ -18,6 +18,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!--link of bootstarp-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -58,7 +61,7 @@
     </div>
     <!-- end landing -->
     <!-- start Search bar -->
-    <div class="search">
+    <!-- <div class="search">
         <form class="container">
             <fieldset>
                 <input type="search" name="" id="" placeholder="Search titles,... ">
@@ -69,6 +72,42 @@
             </fieldset>
             <input class="button active" type="submit" value="Search">
         </form>
+    </div> -->
+    <div class="search">
+
+        <div class="container">
+            <form>
+                <div class="from-control search">
+                    <!-- <BsSearch /> -->
+                    <input type="text" placeholder='Search titles,...' class="form-control" />
+                </div>
+                <div class="line"></div>
+                <div class="from-control address">
+                    <!-- <GoLocation /> -->
+                    <select class="form-select form-select-sm">
+                        <option selected>All</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="line"></div>
+                <div class="from-control fees">
+                    <!-- <AiOutlineDollar /> -->
+                    <select class="form-select form-select-sm">
+                        <option selected>All</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="from-control submit">
+                    <button type='submit'>Search</button>
+                </div>
+
+            </form>
+        </div>
+
     </div>
     <!-- end Search bar -->
     <!-- start Popular schools -->
