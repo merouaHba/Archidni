@@ -203,7 +203,6 @@
  }
 
  .search .container {
-     width: 100%;
      position: absolute;
      top: -75%;
      left: 50%;
@@ -263,7 +262,8 @@
  .schools .container {
      display: flex;
      justify-content: center;
-     flex-wrap: wrap;
+     flex-direction: column;
+     align-items: center;
  }
 
  .schools .container .content {
@@ -278,16 +278,21 @@
  }
 
  .schools .container .schools-container {
-     width: 100%;
-     display: flex;
-     justify-content: space-between;
-     padding: 0 23px;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(31%, 1fr));
+     gap: 28px;
+ }
+
+ @media(max-width:767.9px) {
+     .schools .container .schools-container {
+         grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+         gap: 40px;
+     }
  }
 
  .schools .container .schools-container .school {
+     padding: 25px 30px;
      background-color: #FBFDFC;
-     width: 30%;
-     padding: 20px;
      /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
      border-radius: 3px;
@@ -301,6 +306,8 @@
      -ms-transition: 0.5s;
      -o-transition: 0.5s; */
  }
+
+
 
  /* .schools .container .schools-container .school:hover {
      transform: scale(1.05);
@@ -320,31 +327,36 @@
      -ms-border-radius: 8px;
      -o-border-radius: 8px;
  }
+
  .schools .container .schools-container .school .rate {
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+     padding: 10px 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
  }
- .schools .container .schools-container .school .rate span:first-of-type{
-    width: 50%;
-    background-color: var(--background-color);
-    color: var(--main-color);
-    text-align: center;
-    padding: 7px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
- .schools .container .schools-container .school .rate span{
-    width: 30%;
-    text-align: right;
+
+ .schools .container .schools-container .school .rate span:first-of-type {
+     width: 50%;
+     background-color: var(--background-color);
+     color: var(--main-color);
+     text-align: center;
+     padding: 7px;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
  }
+
+ .schools .container .schools-container .school .rate span {
+     width: 30%;
+     text-align: right;
+ }
+
  .schools .container .schools-container .school .rate span i {
-    color: #FFCE31;
+     color: #FFCE31;
  }
+
  .schools .container .schools-container .school h4 {
      margin-bottom: 15px;
      color: var(--green-color);
@@ -499,8 +511,8 @@
      position: relative;
      display: flex;
      justify-content: space-between;
-    background-color: var(--main-background-color);
-    padding: 40px;
+     background-color: var(--main-background-color);
+     padding: 40px;
  }
 
  .charity .container::after {
@@ -615,12 +627,14 @@
      padding: 200px 0;
      background-color: var(--white-background);
  }
-.about .container {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--main-background-color);
-    padding: 40px;
-}
+
+ .about .container {
+     display: flex;
+     justify-content: space-between;
+     background-color: var(--main-background-color);
+     padding: 40px;
+ }
+
  .about .container h3 {
      font-size: 38px;
      color: var(--main-color);
@@ -721,37 +735,25 @@
  }
 
  /* end footer */
- /* Start Grid System */
- @media (min-width: 576px) {
 
-     /* Small Devices => Landscape Phones */
+
+
+ @media (min-width: 576px) {}
+
+ @media(min-width:768px) {
      .container {
-         max-width: 540px;
+         width: 750px;
      }
  }
 
- @media (min-width: 768px) {
-
-     /* Medium Devices => Tablets */
+ @media(min-width:992px) {
      .container {
-         max-width: 720px;
+         width: 970px;
      }
  }
 
- @media (min-width: 992px) {
-
-     /* Desktops */
+ @media(min-width:1200px) {
      .container {
-         max-width: 960px;
+         width: 1170px;
      }
  }
-
- @media (min-width: 1200px) {
-
-     /* Large Screens */
-     .container {
-         max-width: 1140px;
-     }
- }
-
- /* End Grid System */
