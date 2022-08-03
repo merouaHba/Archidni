@@ -623,7 +623,6 @@
 
  .review .container {
      display: flex;
-     align-items: center;
      flex-direction: column;
      gap: 40px;
  }
@@ -634,10 +633,19 @@
      color: var(--main-color);
  }
 
+ .review .container .slider {
+     display: flex;
+     width: 300%;
+ }
+
+ .review .container .parent {
+     overflow: hidden;
+ }
 
  .review .container .slide {
      display: flex;
      gap: 30px;
+     width: 300%;
  }
 
  .review .container .slide .box {
