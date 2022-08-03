@@ -624,7 +624,7 @@
  .review .container {
      display: flex;
      flex-direction: column;
-     gap: 40px;
+     gap: 50px;
  }
 
  .review .container .title h1 {
@@ -637,6 +637,8 @@
      display: flex;
      width: 300%;
  }
+
+
 
  .review .container .parent {
      overflow: hidden;
@@ -663,10 +665,47 @@
  .review .container .slide .box .img p {
      margin: 0;
      padding-top: 20px;
+     color: #297845;
  }
 
  .review .container .slide .box img {
      display: block;
+ }
+
+ .review .container .navigation {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+ }
+
+ .review .container .slide .desc p {
+     margin: 0;
+ }
+
+ .review .container .slide .desc i {
+     /* padding-bottom: 10px; */
+     color: #3BAC62;
+     font-size: 20px;
+     display: block;
+ }
+
+ .review .container .slide .desc .bxs-quote-alt-right {
+     text-align: end;
+ }
+
+
+
+ .review .container .navigation span {
+     width: 50px;
+     height: 15px;
+     display: block;
+     border-radius: 20px;
+     background-color: #B1DEC0;
+ }
+
+ .review .container .navigation span.active {
+     background-color: #297845;
  }
 
  /* end review*/
