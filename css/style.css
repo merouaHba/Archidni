@@ -469,6 +469,8 @@
      color: var(--main-color);
      text-align: center;
      padding: 7px;
+     display: block;
+     width: fit-content;
      border-radius: 5px;
      -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
@@ -497,7 +499,8 @@
      color: var(--gray-text-color);
      margin-bottom: 30px;
      font-size: 18px;
-     line-height: 23px;
+     line-height: 27px;
+     padding: 20px 0;
  }
 
  .schools .container .schools-container .school a {
@@ -559,6 +562,8 @@
      font-size: 14px;
      width: 80%;
      margin-bottom: 30px;
+     padding: 20px 0;
+     line-height: 25px;
  }
 
  .events-news .container .content button {
@@ -811,13 +816,11 @@
      background-color: var(--main-color);
  }
 
- @media (max-width:1199px) {
-
-
-     .charity .container .content p {
-         margin-bottom: 15px;
-     }
+ .charity .container .content p {
+     padding: 20px 0;
  }
+
+ @media (max-width:1199px) {}
 
  @media (max-width:991px) {
      .charity .container {
@@ -909,6 +912,7 @@
  .about .container .content p:last-of-type {
      margin-bottom: 50px;
      line-height: 31px;
+     padding: 20px 0;
  }
 
  .about .container .images img {
