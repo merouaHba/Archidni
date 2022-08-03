@@ -615,6 +615,55 @@
  }
 
  /* end */
+
+ /* start review*/
+ .review {
+     padding: 200px;
+ }
+
+ .review .container {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap: 40px;
+ }
+
+ .review .container .title h1 {
+     font-size: 40px;
+     margin-bottom: 20px;
+     color: var(--main-color);
+ }
+
+
+ .review .container .slide {
+     display: flex;
+     gap: 30px;
+ }
+
+ .review .container .slide .box {
+     display: flex;
+     align-items: center;
+     gap: 30px;
+     border: 1px solid #3BAC62;
+     padding: 30px;
+ }
+
+ .review .container .slide .box .img {
+     text-align: center;
+ }
+
+ .review .container .slide .box .img p {
+     margin: 0;
+     padding-top: 20px;
+ }
+
+ .review .container .slide .box img {
+     display: block;
+ }
+
+ /* end review*/
+
+
  /* start */
  .charity {
      padding-bottom: 100px;
