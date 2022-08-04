@@ -673,7 +673,8 @@
  }
 
  .review .container .title h1 {
-     font-size: 40px;
+     font-size: 44px;
+     line-height: 71px;
      margin-bottom: 20px;
      color: var(--main-color);
  }
@@ -756,6 +757,25 @@
 
  .review .container .navigation span.active {
      background-color: #297845;
+ }
+
+
+ @media (max-width:991.9px) {
+     .review .container .slide .box .img {
+         width: 50%;
+     }
+
+     .review .container .slide .box img {
+         width: 100%;
+     }
+
+     .review .container .slide .box .desc {
+         width: 50%;
+     }
+
+     .review .container .slide .desc p {
+         font-size: 14px;
+     }
  }
 
  /* end review*/
