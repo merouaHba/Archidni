@@ -348,7 +348,7 @@
  }
 
  .search .from-control i {
-     width: 40px;
+     /* width: 40px; */
      font-size: 22px;
  }
 
@@ -373,14 +373,19 @@
      color: white;
      background-color: #3BAC62;
      padding: 12px 29px;
-     width: 139.65px;
+     /* width: 139.65px; */
  }
 
  .search form .form-control:focus,
  .search form .form-select:focus {
      box-shadow: none;
  }
-
+@media (max-width:767px) {
+    .search .from-control.submit button {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+}
  /* end Search */
  /* start popular schools */
  .schools {
