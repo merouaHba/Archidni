@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="right-box">
-                <h3>who are you</h3>
+                <h3>Who are you</h3>
                 <form>
                     <div class="input-group">
                         <div class="mb-3 ">
@@ -79,14 +79,74 @@
                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
                         </div>
                     </div>
-                    <div class="input-file">
+
+                    <label class="input-file" for="formFile1">
+
                         <div class="file-icon">
                             <i class='bx bx-file-blank'></i>
                         </div>
-                        <p>Select an ID file to upload</p>
+                        <div class="hint">
+                            <p>Select an ID file to upload</p>
+                            <h4>or drag and drop it here</h4>
+                        </div>
+                        <div class="line">
+                            <hr>
+                            <span>Or</span>
+                            <hr>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile1" class="custom-input">Browse file</label>
+                            <input class="form-control" type="file" id="formFile1">
+                        </div>
+                    </label>
+
+                    <div class="price">
+                        <h3>Looking for?</h3>
+
+                        <div class="checkbox">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Free school
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Payed school
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-study">
+                        <h3>Where do you want to study?</h3>
+                        <div class="options">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Wlaya</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Dayra</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Town</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
                     </div>
                 </form>
             </div>
+
         </div>
     </div>
 </body>

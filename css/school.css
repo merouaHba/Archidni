@@ -45,6 +45,17 @@
     width: 60%;
 }
 
+.apply .container .info-study,
+.apply .container .right-box h3:first-child,
+.apply .container .price h3 {
+    color: #06110A;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding-top: 20px;
+}
+
 .apply .container .right-box .input-group label {
     color: #565F5A;
 }
@@ -55,4 +66,98 @@
 
 .apply .container .right-box .input-group>div {
     width: 48%;
+}
+
+
+.apply .container .input-file {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted #3BAC62;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.apply .container .input-file .hint p {
+    font-size: 20px;
+    color: #3BAC62;
+}
+
+.apply .container .input-file .hint h4 {
+    font-size: 13px;
+    text-align: center;
+    color: #565F5A;
+}
+
+
+
+.apply .container .input-file .line {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.apply .container .input-file .line>hr {
+    width: 30%;
+    color: #3BAC62;
+}
+
+.apply .container .input-file input[type="file"] {
+    display: none;
+}
+
+.apply .container .input-file .custom-input {
+    padding: 12px 29px;
+    border: 1px solid #3BAC62;
+    color: #3BAC62;
+}
+
+.apply .container .input-file .file-icon i {
+    color: #AAAAAA;
+    font-size: 40px;
+}
+
+.apply .container .price {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.apply .container .price .checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apply .container .price .form-check {
+    border: 1px solid #3BAC62;
+    width: 45%;
+    padding: 9px 35px;
+}
+
+.apply .container .price .form-check-input:checked {
+    background-color: #3BAC62;
+    border-color: #3BAC62;
+}
+
+
+.apply .container .info-study .options {
+    display: flex;
+    gap: 20px;
+}
+
+.apply .container .info-study .options .form-select {
+    border: 1px solid #3BAC62;
+}
+
+.apply .container .form-control:focus,
+.apply .container .form-select:focus {
+    border-color: #3BAC62;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(59 172 98 / 25%);
 }
