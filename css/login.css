@@ -129,7 +129,7 @@
     color: #3BAC62;
     font-weight: 700;
     font-size: 44px;
-    line-height: 66px;
+    margin-bottom: 20px !important;
 }
 
 .login .container .right-box p {
