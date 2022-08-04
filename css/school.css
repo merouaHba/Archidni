@@ -1,0 +1,58 @@
+.apply {
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+}
+
+.apply .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 25px;
+}
+
+.apply .container .left-box {
+    text-align: center;
+    width: 35%;
+    background: rgba(177, 222, 192, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 175px;
+    padding: 50px 10px;
+}
+
+.apply .container .left-box>h1 {
+    color: #3BAC62;
+}
+
+.apply .container .left-box .desc h3 {
+    padding-bottom: 50px;
+}
+
+.apply .container .left-box .desc p {
+    font-size: 44px;
+    line-height: 50px;
+    color: #3BAC62;
+}
+
+.apply .container .right-box {
+    width: 60%;
+}
+
+.apply .container .right-box .input-group label {
+    color: #565F5A;
+}
+
+.apply .container .right-box .input-group {
+    justify-content: space-between;
+}
+
+.apply .container .right-box .input-group>div {
+    width: 48%;
+}
