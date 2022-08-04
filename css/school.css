@@ -14,6 +14,8 @@
     justify-content: space-between;
     background-color: white;
     padding: 25px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 15px -12px #1e1e1e;
 }
 
 .apply .container .left-box {
@@ -157,6 +159,53 @@
     box-shadow: 0 0 0 0.2rem rgb(59 172 98 / 25%);
 }
 
-.suggest select option[value="1"] {
-    background-image: url("../images/logo.png")
+.apply .container .form-select,
+.apply .container .form-control {
+    border-color: #3BAC62;
+}
+
+
+
+.apply .container .submit input {
+    border: none;
+    background-color: #3BAC62;
+    color: white;
+    width: 140px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+@media (max-width:991.9px) {
+    .apply .container .left-box {
+        flex-basis: 100%;
+        gap: 50px;
+    }
+
+    .apply .container .right-box {
+        flex-basis: 100%;
+    }
+
+    .apply .container .left-box .desc h3 {
+        width: 70%;
+        margin: auto !important;
+    }
+}
+
+
+@media(max-width:768px) {
+    .apply .container .left-box .desc p {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .apply .container .suggest,
+    .apply .container .info-study,
+    .apply .container .right-box h3:first-child,
+    .apply .container .price h3 {
+        padding-bottom: 39px;
+        padding-top: 40px;
+        text-align: center;
+    }
 }
