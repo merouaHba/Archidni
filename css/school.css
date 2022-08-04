@@ -15,6 +15,7 @@
     background-color: white;
     padding: 25px;
     flex-wrap: wrap;
+    box-shadow: inset 0px 0px 15px -10px #1e1e1e
 }
 
 .apply .container .left-box {
@@ -156,6 +157,11 @@
     border-color: #3BAC62;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(59 172 98 / 25%);
+}
+
+.apply .container .form-select,
+.apply .container .form-control {
+    border-color: #3BAC62;
 }
 
 
