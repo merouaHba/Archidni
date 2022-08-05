@@ -26,9 +26,9 @@
 .login .container .left-box>h1 {
     color: #3BAC62;
     font-weight: 700;
-        font-size: 44px;
-        line-height: 66px;
-            margin-bottom: 15px !important;
+    font-size: 44px;
+    line-height: 66px;
+    margin-bottom: 15px !important;
 }
 
 .login .container .left-box form {
@@ -37,19 +37,24 @@
     flex-direction: column;
     align-items: center;
 }
- .login .container .left-box form .google {
-     border-bottom:  1px solid #6C7770;
+
+.login .container .left-box form .google {
+    border-bottom: 1px solid #6C7770;
     width: 100%;
     margin-bottom: 20px;
     padding: 10px;
     text-align: center;
- }
+    color: #3BAC62;
+    font-size: 19px;
+    font-weight: 500;
+}
 
- .login .container .left-box form .google img {
-     width: 15px;
-     height: 15px;
-     margin-right: 15px;
- }
+.login .container .left-box form .google img {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
 .login .container .left-box form p:first-of-type {
     text-align: center;
     position: relative;
@@ -68,21 +73,25 @@
     top: 50%;
     background-color: #B1DEC0;
 }
- .login .container .left-box form p:first-of-type::after {
-     left: 0;
- }
 
- .login .container .left-box form p:first-of-type:before {
-     right: 0;
- }
+.login .container .left-box form p:first-of-type::after {
+    left: 0;
+}
+
+.login .container .left-box form p:first-of-type:before {
+    right: 0;
+}
+
 .login .container .left-box form label,
 .login .container .left-box form p:last-of-type {
     align-self: flex-start;
 }
+
 .login .container .left-box form p:last-of-type {
     margin-bottom: 20px !important;
     margin-top: 20px !important;
 }
+
 .login .container .left-box form p:last-of-type a {
     color: #3BAC62;
 }
@@ -91,6 +100,7 @@
     text-align: center;
     padding: 10px;
 }
+
 .login .container .left-box form select,
 .login .container .left-box form input:not([type="submit"]) {
     width: 100%;
@@ -106,9 +116,10 @@
 .login .container .left-box form input:not([type="submit"]):focus {
     outline: none
 }
-.login .container .left-box form input[type="submit"]{
-        padding: 9px 29px;
-        width: 100px;
+
+.login .container .left-box form input[type="submit"] {
+    padding: 9px 29px;
+    width: 100px;
 }
 
 .login .container .left-box::after {
@@ -139,25 +150,38 @@
     text-align: justify;
     color: #565F5A;
 }
- @media (max-width: 991px) {
+
+@media (max-width: 991px) {
 
     .login .container .right-box {
-         width: 50%;
-     }
- }
+        width: 50%;
+    }
+}
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
 
     .login .container {
-         flex-direction: column;
-         gap: 40px 0;
-     }
-    .login .container .left-box {
-         width: 80%;
-     }
+        flex-direction: column;
+        gap: 60px 0;
+    }
 
-         .login .container .right-box {
-         width: 100%;
-         text-align: center;
-     }
- }
+    .login .container .left-box {
+        width: 100%;
+    }
+
+    .login .container .left-box::after {
+        display: none;
+    }
+        .login .container .left-box form {
+            width: 100%;
+        }
+    .login .container .right-box {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 576px) {
+    .login .container .left-box {
+        padding: 0;
+    }
+}
